@@ -1016,3 +1016,18 @@ function displaynum (num) {
    
 }
 console.log(displaynum(num)) */
+
+function maskify(cc){
+   let lastFour = cc.substr(-4)
+   let mask = ''
+   for (let i = 0; i < cc.length - 4; i++){
+       mask += '#'
+       }
+       return mask + lastFour
+       if (cc.length < 4){
+           return cc
+       }else if (cc === ''){
+           return '';
+       }
+}
+console.log(maskify(''));
